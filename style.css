@@ -114,3 +114,30 @@ footer {
   font-size: 14px;
   color: var(--slate);
 }
+
+/* Email address: shown as selectable text with a copy button, so it is usable
+   even where no mail client is configured to handle a mailto: link. */
+.mail-address {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.mail-address a { word-break: break-all; }
+
+.copy {
+  font: inherit;
+  font-size: 13px;
+  line-height: 1;
+  padding: 5px 10px;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  background: var(--paper);
+  color: var(--slate);
+  cursor: pointer;
+}
+
+.copy:hover { color: var(--ink); border-color: var(--slate); }
+.copy:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.copy.copied { color: var(--accent); border-color: var(--accent); }
