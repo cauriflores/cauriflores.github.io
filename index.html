@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Pacheco — Support</title>
-<meta name="description" content="Help and contact for Pacheco, a weather app for iPhone and iPad.">
+<meta name="description" content="Help and contact for Pacheco, a weather app for iPhone. Ayuda y contacto para Pacheco.">
 <link rel="icon" href="favicon.ico?v=2" sizes="any">
 <link rel="icon" type="image/png" href="favicon-32.png?v=2" sizes="32x32">
 <link rel="apple-touch-icon" href="apple-touch-icon.png?v=2">
@@ -12,13 +12,22 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=IBM+Plex+Sans:wght@400;600&display=swap">
-<link rel="stylesheet" href="style.css?v=2">
+<link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
 <div class="wrap">
 
+  <div class="langbar" hidden>
+    <button type="button" data-lang="en">English</button>
+    <button type="button" data-lang="es">Español</button>
+  </div>
+  <span hidden data-title-en="Pacheco — Support" data-title-es="Pacheco — Soporte"></span>
+
+  <!-- ─────────────────────────── English ─────────────────────────── -->
+  <div class="langblock" lang="en">
+
   <header>
-    <p class="eyebrow">Pacheco for iPhone &amp; iPad</p>
+    <p class="eyebrow">Pacheco for iPhone</p>
     <h1>Support</h1>
     <p class="lede">Pacheco shows the weather where you are, and the weather where your friends are.</p>
     <nav><a href="index.html">Support</a><a href="privacy.html">Privacy</a></nav>
@@ -68,7 +77,7 @@
 
   <h2>Requirements</h2>
   <ul>
-    <li>iOS or iPadOS 17.2 or later</li>
+    <li>iPhone running iOS 17.2 or later</li>
     <li>A network connection for forecasts</li>
     <li>Location Services, for weather where you are</li>
   </ul>
@@ -82,7 +91,82 @@
     <p>Pacheco is made by Cauri Flores. See also the <a href="privacy.html">privacy policy</a>.</p>
   </footer>
 
+  </div>
+
+  <!-- ─────────────────────────── Español ─────────────────────────── -->
+  <div class="langblock" lang="es">
+
+  <header>
+    <p class="eyebrow">Pacheco para iPhone</p>
+    <h1>Soporte</h1>
+    <p class="lede">Pacheco te muestra el tiempo donde estás y el tiempo donde están los tuyos.</p>
+    <nav><a href="index.html">Soporte</a><a href="privacy.html">Privacidad</a></nav>
+  </header>
+
+  <div class="card">
+    <p><strong>¿Necesitas ayuda, has encontrado un fallo o tienes una sugerencia?</strong><br>
+    Abre una incidencia en <a href="https://github.com/cauriflores/cauriflores.github.io/issues">github.com/cauriflores</a> y cuenta qué ha pasado.
+    Las leo todas y respondo allí. Hace falta una cuenta gratuita de GitHub para escribir.</p>
+    <p style="margin-top:12px"><a href="https://github.com/cauriflores/cauriflores.github.io/issues/new">Informar de un problema &rarr;</a></p>
+    <p style="margin-top:14px"><strong>¿No tienes cuenta de GitHub?</strong>
+      Escríbeme a
+      <span class="mail" data-u="Y29tbW9uZXJkZXY=" data-d="Z21haWwuY29t">
+        <a href="https://github.com/cauriflores/cauriflores.github.io/issues/new">usa GitHub</a>
+      </span>.</p>
+  </div>
+
+  <h2>Sobre el nombre</h2>
+  <p>En Venezuela, <em>"Llegó Pacheco"</em> significa que ha llegado el frío. La expresión
+  recuerda a Antonio Pacheco, un floricultor que bajaba de Galipán, en el cerro El Ávila, a
+  vender sus flores en Caracas a finales de noviembre. Su llegada coincidía con el inicio de la
+  temporada fría, y la frase se quedó en la lengua.</p>
+
+  <h2>Preguntas frecuentes</h2>
+
+  <h3>La pestaña Tiempo local está vacía o dice que el tiempo no está disponible</h3>
+  <p>Pacheco necesita conexión a internet para consultar el pronóstico. Si tienes conexión y aun
+  así no carga, pulsa <strong>Reintentar</strong>. Si el problema persiste, suele ser una
+  incidencia temporal del servicio meteorológico y no de tu dispositivo.</p>
+
+  <h3>Dice que no puede determinar dónde estoy</h3>
+  <p>Pacheco necesita el Servicio de Localización para mostrar el tiempo de tu zona. Abre
+  <strong>Ajustes → Privacidad y seguridad → Localización</strong>, busca Pacheco y selecciona
+  <strong>Al usar la app</strong>. Si la localización está activada y aun así no consigue una
+  posición, suele ayudar moverse a un sitio con el cielo más despejado.</p>
+
+  <h3>¿Cómo agrego a alguien?</h3>
+  <p>Ve a <strong>Información</strong>, toca <strong>Pulsa para agregar</strong> y usa
+  <strong>Buscar</strong> para encontrar su ciudad o dirección. Elige el resultado más cercano y
+  guarda. Su tiempo aparecerá entonces en <strong>Clima de amigos</strong>.</p>
+
+  <h3>¿Cómo elimino a alguien?</h3>
+  <p>En <strong>Información</strong>, desliza hacia la izquierda sobre la persona y pulsa
+  eliminar.</p>
+
+  <h3>¿En qué idiomas está Pacheco?</h3>
+  <p>En español y en inglés. Sigue automáticamente el idioma de tu dispositivo.</p>
+
+  <h2>Requisitos</h2>
+  <ul>
+    <li>iPhone con iOS 17.2 o posterior</li>
+    <li>Conexión a internet para los pronósticos</li>
+    <li>Servicio de Localización, para el tiempo de donde estás</li>
+  </ul>
+
+  <h2>Créditos</h2>
+  <p>Datos meteorológicos de <strong>Apple Weather</strong>. Todas las fotografías proceden de
+  <a href="https://unsplash.com">Unsplash</a> — cada fotógrafo está acreditado dentro de la app,
+  en <strong>Atribuciones → Fotografía</strong>.</p>
+
+  <footer>
+    <p>Pacheco está hecho por Cauri Flores. Consulta también la
+    <a href="privacy.html">política de privacidad</a>.</p>
+  </footer>
+
+  </div>
+
 </div>
-<script src="mail.js?v=2"></script>
+<script src="lang.js?v=3"></script>
+<script src="mail.js?v=3"></script>
 </body>
 </html>

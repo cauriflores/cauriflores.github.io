@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Pacheco — Privacy Policy</title>
-<meta name="description" content="Privacy policy for Pacheco, a weather app for iPhone and iPad.">
+<meta name="description" content="Privacy policy for Pacheco, a weather app for iPhone. Política de privacidad de Pacheco.">
 <link rel="icon" href="favicon.ico?v=2" sizes="any">
 <link rel="icon" type="image/png" href="favicon-32.png?v=2" sizes="32x32">
 <link rel="apple-touch-icon" href="apple-touch-icon.png?v=2">
@@ -12,13 +12,22 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=IBM+Plex+Sans:wght@400;600&display=swap">
-<link rel="stylesheet" href="style.css?v=2">
+<link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
 <div class="wrap">
 
+  <div class="langbar" hidden>
+    <button type="button" data-lang="en">English</button>
+    <button type="button" data-lang="es">Español</button>
+  </div>
+  <span hidden data-title-en="Pacheco — Privacy Policy" data-title-es="Pacheco — Política de privacidad"></span>
+
+  <!-- ─────────────────────────── English ─────────────────────────── -->
+  <div class="langblock" lang="en">
+
   <header>
-    <p class="eyebrow">Pacheco for iPhone &amp; iPad</p>
+    <p class="eyebrow">Pacheco for iPhone</p>
     <h1>Privacy Policy</h1>
     <p class="lede">Pacheco has no account, no analytics, and no server of its own. Nothing you
     enter leaves your device except a coordinate sent to Apple to fetch a forecast.</p>
@@ -78,6 +87,12 @@
   in your browser. Pacheco sends nothing to Unsplash; it is an ordinary web link that you choose
   to follow.</p>
 
+  <h2>Your rights</h2>
+  <p>Because Pacheco holds no personal data about you, there is nothing for its developer to
+  disclose, correct, export or erase. Everything the app knows is on your own device, and
+  deleting the app deletes all of it. Data handled by Apple's services is governed by
+  <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>.</p>
+
   <h2>Children</h2>
   <p>Pacheco is not directed at children and collects no personal information from anyone,
   regardless of age.</p>
@@ -92,13 +107,114 @@
   include anything you would not want others to read. If you would rather write privately,
   email <span class="mail" data-u="Y29tbW9uZXJkZXY=" data-d="Z21haWwuY29t"><a href="index.html">see the support page</a></span>.</p>
 
-  <p class="updated">Last updated: 28 August 2026.</p>
+  <p class="updated">Last updated: 30 August 2026.</p>
 
   <footer>
     <p>Pacheco is made by Cauri Flores. See also <a href="index.html">support</a>.</p>
   </footer>
 
+  </div>
+
+  <!-- ─────────────────────────── Español ─────────────────────────── -->
+  <div class="langblock" lang="es">
+
+  <header>
+    <p class="eyebrow">Pacheco para iPhone</p>
+    <h1>Política de privacidad</h1>
+    <p class="lede">Pacheco no tiene cuentas, ni analíticas, ni servidor propio. Nada de lo que
+    escribes sale de tu dispositivo, salvo una coordenada que se envía a Apple para consultar el
+    pronóstico.</p>
+    <nav><a href="index.html">Soporte</a><a href="privacy.html">Privacidad</a></nav>
+  </header>
+
+  <div class="card">
+    <p><strong>En resumen.</strong> Pacheco no recopila, almacena ni transmite tu información
+    personal a su desarrollador. No hay rastreo, ni publicidad, ni analíticas de terceros de
+    ningún tipo.</p>
+  </div>
+
+  <h2>Tu ubicación</h2>
+  <p>Cuando se lo permites, Pacheco lee tu ubicación mientras usas la app, con un único fin:
+  preguntar al servicio meteorológico de Apple qué tiempo hace allí y nombrar el lugar en el que
+  estás.</p>
+  <ul>
+    <li>Tus coordenadas se envían a <strong>Apple Weather</strong> para obtener el pronóstico, y
+    al servicio de geocodificación de Apple para convertirlas en el nombre de un lugar.</li>
+    <li><strong>No</strong> las guarda Pacheco, <strong>no</strong> se envían al desarrollador y
+    <strong>no</strong> se vinculan a tu identidad.</li>
+    <li>Pacheco nunca solicita la ubicación en segundo plano. Solo la pide mientras usas la
+    app.</li>
+  </ul>
+  <p>Puedes retirar el permiso cuando quieras en <strong>Ajustes → Privacidad y seguridad →
+  Localización</strong>. La app te lo dirá con claridad en lugar de mostrarte el tiempo de otro
+  sitio.</p>
+
+  <h2>Las personas que guardas</h2>
+  <p>Los nombres, notas, direcciones y coordenadas que guardas de otras personas se almacenan
+  <strong>solo en tu dispositivo</strong>. No se suben a ningún sitio, no se sincronizan con
+  iCloud y no son visibles para el desarrollador ni para nadie más. Al eliminar a una persona se
+  borra su ficha; al eliminar la app se borran todas.</p>
+  <p>Cuando buscas la ubicación de alguien, el texto que escribes se envía a <strong>Apple
+  Maps</strong> para encontrar lugares coincidentes. Pacheco no conserva ese texto.</p>
+
+  <h2>Lo que Pacheco no hace</h2>
+  <ul>
+    <li>Sin cuentas, sin inicio de sesión, sin recogida de correos electrónicos</li>
+    <li>Sin analíticas, informes de fallos ni medición de uso</li>
+    <li>Sin publicidad ni identificadores publicitarios</li>
+    <li>Sin rastreo entre apps o sitios web</li>
+    <li>Sin SDK de terceros de ningún tipo</li>
+    <li>Sin venta ni cesión de datos a nadie</li>
+  </ul>
+
+  <h2>Servicios de los que depende Pacheco</h2>
+  <p>Pacheco usa los frameworks propios de Apple. Los datos que gestiona Apple se rigen por la
+  política de privacidad de Apple, no por esta.</p>
+  <ul>
+    <li><strong>Apple WeatherKit</strong> — recibe una coordenada y devuelve el pronóstico.
+    Consulta la <a href="https://weatherkit.apple.com/legal-attribution.html">atribución
+    meteorológica de Apple</a>.</li>
+    <li><strong>Apple Maps / MapKit</strong> — recibe el texto de búsqueda y una región del mapa
+    para devolver los lugares coincidentes.</li>
+    <li><strong>Core Location</strong> — proporciona tus coordenadas en el dispositivo.</li>
+  </ul>
+  <p>Al tocar el crédito de un fotógrafo dentro de la app se abre
+  <a href="https://unsplash.com">Unsplash</a> en tu navegador. Pacheco no envía nada a Unsplash;
+  es un enlace web corriente que decides seguir.</p>
+
+  <h2>Tus derechos</h2>
+  <p>Como Pacheco no conserva datos personales sobre ti, no hay nada que su desarrollador pueda
+  comunicar, rectificar, portar o suprimir. Todo lo que la app sabe está en tu propio
+  dispositivo, y al desinstalarla se borra por completo. Los datos que gestionan los servicios de
+  Apple se rigen por la <a href="https://www.apple.com/es/legal/privacy/">política de privacidad
+  de Apple</a>.</p>
+
+  <h2>Menores</h2>
+  <p>Pacheco no está dirigido a menores y no recopila información personal de nadie, sea cual sea
+  su edad.</p>
+
+  <h2>Cambios</h2>
+  <p>Si esta política cambia, la versión revisada se publicará en esta página con una fecha nueva
+  más abajo. Los cambios importantes se indicarán además en las notas de la versión de la app.</p>
+
+  <h2>Contacto</h2>
+  <p>Para preguntas sobre esta política, abre una incidencia en
+  <a href="https://github.com/cauriflores/cauriflores.github.io/issues">github.com/cauriflores</a>.
+  Ten en cuenta que las incidencias son públicas: no incluyas nada que no quieras que otros lean.
+  Si prefieres escribir en privado,
+  <span class="mail" data-u="Y29tbW9uZXJkZXY=" data-d="Z21haWwuY29t"><a href="index.html">consulta la página de soporte</a></span>.</p>
+
+  <p class="updated">Última actualización: 30 de agosto de 2026.</p>
+
+  <footer>
+    <p>Pacheco está hecho por Cauri Flores. Consulta también el
+    <a href="index.html">soporte</a>.</p>
+  </footer>
+
+  </div>
+
 </div>
-<script src="mail.js?v=2"></script>
+<script src="lang.js?v=3"></script>
+<script src="mail.js?v=3"></script>
 </body>
 </html>
