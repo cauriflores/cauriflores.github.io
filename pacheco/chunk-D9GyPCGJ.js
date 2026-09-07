@@ -1,4 +1,4 @@
-import{$ as rE,C as Up,F as dy,H as ic,J as np,Y as oE,d as Ie,it as tE,nt as sc,ot as y$1,r as AE,w as Vv}from"./main-P745N52C.js";function b(a,e){if(a&1&&(ic(0,`p`),AE(1),sc()),a&2){let t=e.$implicit;dy(),np(t)}}var y=`The expression "Lleg\xF3 Pacheco" (Pacheco arrived) originated in Venezuela and it is used to refer to the arrival of "cold" weather, specifically in December and in the city of Caracas.
+import{$ as rE,C as Up,F as dy,H as ic,J as np,Y as oE,d as Ie,it as tE,nt as sc,ot as y$1,r as AE,w as Vv}from"./main-E2ICCZBJ.js";function b(a,e){if(a&1&&(ic(0,`p`),AE(1),sc()),a&2){let t=e.$implicit;dy(),np(t)}}var y=`The expression "Lleg\xF3 Pacheco" (Pacheco arrived) originated in Venezuela and it is used to refer to the arrival of "cold" weather, specifically in December and in the city of Caracas.
 
 The legend tells that a flower farmer named Antonio Pacheco came down to Caracas from Galip\xE1n, a small town on the El \xC1vila hill, at the end of November or beginning of December to sell his flowers.
 
