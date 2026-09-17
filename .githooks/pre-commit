@@ -1,0 +1,52 @@
+#!/bin/sh
+# Refuse any commit that touches Pacheco's App Store URLs.
+#
+# index.html   -> https://cauriflores.github.io/            (Support URL)
+# privacy.html -> https://cauriflores.github.io/privacy.html (Privacy Policy)
+#
+# The Support URL is a VERSION-level field in App Store Connect: moving it
+# requires a new app version and a full App Review of the whole app. Apple
+# checks the privacy page. Pacheco took three rejection rounds to ship.
+#
+# Installed via core.hooksPath -> .githooks (so it is versioned, unlike .git/hooks).
+
+PROTECTED="index.html privacy.html"
+
+hit=""
+for f in $PROTECTED; do
+    if git diff --cached --name-only --diff-filter=ACDMR | grep -qx "$f"; then
+        hit="$hit $f"
+    fi
+done
+
+[ -z "$hit" ] && exit 0
+
+cat >&2 <<EOF
+
+  ┌─────────────────────────────────────────────────────────────┐
+  │  COMMIT REFUSED — these files are in the App Store listing  │
+  └─────────────────────────────────────────────────────────────┘
+
+  Staged:$hit
+
+    index.html    → https://cauriflores.github.io/
+                    Pacheco's App Store **Support URL**
+    privacy.html  → https://cauriflores.github.io/privacy.html
+                    The **Privacy Policy** Apple checks
+
+  The Support URL is a VERSION-LEVEL field in App Store Connect.
+  Changing it requires a new app version and a full App Review of
+  the entire app — not just the diff. Pacheco took three rejection
+  rounds to ship.
+
+  This repo is frozen on purpose. Everything else belongs in
+  cauriflores.com (repo cauriflores/web), on its own domain.
+
+  To see what you staged:   git diff --cached -- $hit
+  To unstage it:            git restore --staged $hit
+
+  If you genuinely intend this and have accepted the review cost:
+      git commit --no-verify
+
+EOF
+exit 1

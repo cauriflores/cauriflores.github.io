@@ -25,3 +25,22 @@ Angular deploy rsynced `--delete` straight into it; both are gone.
 `/support/` is the same support page at a second URL, linked from the nav on
 cauriflores.com. Its links to the writing and the app are absolute, because
 they are on the other host now.
+
+## The freeze is enforced
+
+`.githooks/pre-commit` refuses any commit that stages `index.html` or
+`privacy.html`, and explains why. It is wired up with:
+
+```bash
+git config core.hooksPath .githooks
+```
+
+**That config is local and does not survive a fresh clone** — `.githooks/` is
+versioned, but the setting is not. Re-run the line above after cloning, or the
+hook is silently inactive.
+
+To edit those two files deliberately, having accepted that it costs a new app
+version and a full App Review: `git commit --no-verify`.
+
+Everything else in this repo commits normally. The hook guards two files, not
+the repo.
